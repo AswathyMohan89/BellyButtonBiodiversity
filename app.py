@@ -13,9 +13,6 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import random
 
 
 #################################################
