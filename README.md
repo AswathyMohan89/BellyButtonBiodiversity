@@ -1,4 +1,4 @@
-Belly Button Biodiversity
+## Belly Button Biodiversity
 
 https://belly-button-bio.herokuapp.com/
 
@@ -10,7 +10,7 @@ This following project combines the power of Python with Javascript, CSS and HTM
 
 
 
-Step 1 - Flask API
+### Step 1 - Flask API
 
 Flask is used to design an API for the  dataset and to serve the HTML and JavaScript required for the dashboard page. Using the sqlite database file and SQLAlchemy with Flask application code,  routes below are created.
 
@@ -106,7 +106,7 @@ Flask is used to design an API for the  dataset and to serve the HTML and JavaSc
 
 ---
 
-Step 2 - Plotly.js
+### Step 2 - Plotly.js
 
 The interactive Plotly libray was used for visualization purposes. Using app.js , the following charts were drawn and displayed. 
 
