@@ -1,0 +1,62 @@
+.jumbotron {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    background-image: url('/static/images/bbb_project.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+
+.boxh{
+	
+    height:100%;
+    margin-bottom: 0px;
+ 	margin-right: 0px;
+ 	padding: 10px;
+    margin: 10px;
+ 	background-color: #eee;
+ 	color: #5a5a5a;
+ 	border:1 px solid;
+ 	box-shadow:5 px ;
+}
+.charts{
+    height:100%;
+    width:100%;
+}
+
+.box {
+  
+  border-radius: 3px;
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  border:1 px solid #3c8dbc ;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.div_box {
+    width: 100%;
+    padding: 10px;
+    border: 5px #EEEEEE;
+    margin: 0; 
+    margin-bottom: 20px;
+
+}
+.box-header{
+	background: #3c8dbc;
+	color:#ffffff;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+   padding-bottom: 40px;
+   color: white;
+   background: linear-gradient(#7DC7C0, #222222);
+}

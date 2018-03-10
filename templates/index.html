@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belly Button Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
+                          <!-- Optional theme -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet">
+    
+        <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js">
+        </script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    
+   
+  </head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron" style="text-align: center">
+            <h1>Belly Button Biodiversity Dashboard</h1>
+            <p>Use  the interactive dashboard below to explore dataset</p>
+        </div>
+
+        <div class="row " style="text-align: center">
+            <div class="col-md-12 div_box">
+                <div class="col-md-3">
+                    <div class="form-group boxh">
+                        <label for="sel1">SelectSample</label>
+                        <select class="form-control" id="selDataset" onchange="optionChanged(this.value)">
+                            {% for options in sample_drop %}
+                            
+                            <option value="{{ options}}">{{ options }}</option>
+
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="panel panel-primary">
+                            <div class="panel-heading">Sample Metadata</div>
+                            <div class="panel-body" id="meta" style="text-align: left"></div>
+                    </div>
+                    <!--
+                    <div class="box box-default">
+                            <div class="box-header with-border">
+                                <h3>Sample Metadata </h3>
+                            </div>
+                            <div class="box-body" id ="meta" style="text-align: left">
+                                
+                            </div>
+                    </div>-->
+                   
+                </div>
+                <div class="col-md-8">
+                    <div class ="col-md-7" id="pie"></div>
+                    <div class ="col-md-5" id="wash"></div>    
+                </div>
+   
+            </div>
+        </div>            
+                    
+        <div id="bubble" class="col-md-12 charts "></div>
+              
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
